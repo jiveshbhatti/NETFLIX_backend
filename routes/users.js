@@ -58,7 +58,7 @@ router.get("/find/:id", async (req, res) => {
 
 //GET ALL
 router.get("/", verify, async (req, res) => {
-    console.log('users get all route')
+  console.log("users get all route");
   const query = req.query.new;
   if (req.user.isAdmin) {
     try {
