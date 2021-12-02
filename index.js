@@ -70,6 +70,6 @@ app.use('/api/lists', listRoute)
 
 
 
-app.listen(process.env.port || 8000, ()=>{
-    console.log('Server running on 8000 backend')
+app.listen(process.env.port || 3001, ()=>{
+    console.log('Server running on 3001 backend')
 })
