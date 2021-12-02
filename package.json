@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js --ignore client",
+    "start": "nodemon index.js",
+    "server": "nodemon index.js",
     "heroku-postbuild": "cd netflix && npm install && npm run build"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
