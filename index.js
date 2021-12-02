@@ -25,13 +25,18 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopol
 
 //Middleware:
 
-app.use(express.json())
+
 
 app.use(
     cors({
         origin:'*',
     })
 )
+
+
+app.use(express.json())
+
+
 
 
 
@@ -41,8 +46,6 @@ app.use(express.static(path.resolve(__dirname, "./netflix/build")));
 app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "./netflix/build", "index.html"));
 });
-
-
 
 
 
